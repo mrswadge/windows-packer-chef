@@ -4,7 +4,6 @@ trigger:
       - '*'
   paths:
     include:
-      - .rubocop.yml
       - src
       - samples/cookbooks/iis
 pr: none
@@ -18,10 +17,6 @@ stages:
       configurations:
         - name: iis
           platforms:
-            - name: windows-server-desktop
-              suites:
-                - server-default
-
-            - name: windows-server-core
+            - name: windows
               suites:
                 - server-default

@@ -4,7 +4,6 @@ trigger:
       - '*'
   paths:
     include:
-      - .rubocop.yml
       - src
       - samples/cookbooks/docker
 pr: none
@@ -18,11 +17,7 @@ stages:
       configurations:
         - name: docker
           platforms:
-            - name: windows-server-desktop
-              suites:
-                - enterprise
-
-            - name: windows-server-core
+            - name: windows-server
               suites:
                 - enterprise
 
