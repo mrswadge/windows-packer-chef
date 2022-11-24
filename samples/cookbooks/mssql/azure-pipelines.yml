@@ -15,4 +15,5 @@ stages:
           instances:
             - server-2019-developer-windows-server
             - server-2017-developer-windows-server
+            - server-2016-developer-windows-server
             - management-studio-2018-windows-desktop

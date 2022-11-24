@@ -39,6 +39,15 @@ suites:
     includes:
       - windows-server
 
+  - name: server-2016-developer
+    attributes:
+      gusztavvargadr_mssql:
+        server:
+          version: "2016"
+          edition: developer
+    includes:
+      - windows-server
+
   - name: management-studio-2018
     attributes:
       gusztavvargadr_mssql:
